@@ -59,11 +59,10 @@ script('core', [
 			<input type="submit" id="submit" class="login primary icon-confirm" title="<?php p($l->t('Log in')); ?>" value="" disabled="disabled"/>
 		</p>
 		<?php
-			// echo $_SESSION['count'];
 			if ($_SESSION['count'] >= 2) {
-				echo '<div class="g-recaptcha" data-callback="notRobot" data-sitekey="6LcZYW8UAAAAAGXqa84qM6AuuPfQQJnpP3S9dN3Q" id="robot"></div>';
+				echo '<div class="g-recaptcha" data-callback="notRobot" data-sitekey="6LfZUngUAAAAAOvksFnjRO3S0MH9dsb6aBH9QmIg" id="robot"></div>';
 			} else {
-				echo '<div class="g-recaptcha" data-callback="notRobot" data-sitekey="6LcZYW8UAAAAAGXqa84qM6AuuPfQQJnpP3S9dN3Q" id="robot" style="display: none;"></div>';
+				echo '<div class="g-recaptcha" data-callback="notRobot" data-sitekey="6LfZUngUAAAAAOvksFnjRO3S0MH9dsb6aBH9QmIg" id="robot" style="display: none;"></div>';
 			}
 		?>
 		<?php if (!empty($_['csrf_error'])) { ?>
