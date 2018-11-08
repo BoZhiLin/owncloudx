@@ -6,11 +6,11 @@ script('core', [
 	'lostpassword',
 	'login',
 	'browser-update',
-	'test',
 	'validate-form',
 ]);
 
 ?>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 
 <!--[if IE 8]><style>input[type="checkbox"]{padding:0;}</style><![endif]-->
 <form method="post" name="login" onsubmit="return validate()">
